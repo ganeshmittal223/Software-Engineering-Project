@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="theme-color" content="#D5E0EB">
 
   <title>Bubble Sort C++</title>
   <meta content="" name="description">
@@ -19,6 +20,9 @@
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel='stylesheet' id='lscodehighlight-css-css' href='https://prepinsta.com/wp-content/themes/prepinsta-2020/css/lscodehighlight.css?ver=15.2.34' type='text/css' media='all' />
+  <script type='text/javascript' src='https://prepinsta.com/wp-content/themes/prepinsta-2020/js/lscodehighlight.js?ver=15.2.34' id='lscodehighlight-js-js'></script>
+
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
@@ -133,10 +137,12 @@
       <figure><img alt="Swapping occurs only if the first element is greater than the next element" height="325" src="/D:\Study Material\Software Engineering Project\Templates\Knight\Knight\assets\img\links images/bubble sort 3.png" title="Bubble Sort step 2" width="575"><figcaption>Compare the adjacent elements</figcaption></figure><p>The array is sorted when all the unsorted elements are placed at their correct positions.</p>
       
       <figure><img alt="The array is sorted if all the elements are kept in the right order." height="237" src="/D:\Study Material\Software Engineering Project\Templates\Knight\Knight\assets\img\links images/bubble sort 4.png" title="Bubble Sort step 3" width="575"><figcaption>The array is sorted if all elements are kept in the right order</figcaption></figure><hr><h2 id="algorithm">Bubble Sort Algorithm</h2>
-      <div style="background: ghostwhite; 
+      <div style="background: black; 
             font-size: 20px; 
+          font-family: 'Courier New', Courier, monospace;
+          color: lightgoldenrodyellow;
             padding: 10px; 
-            border: 1px solid lightgray; 
+            border: 1px solid white; 
             margin: 10px;">
   
       <pre>
@@ -159,7 +165,7 @@
           <pre class="exec">
       <code>// Bubble sort in C++
       
-      #include &lt;iostream&gt;
+      #include &lt;bits/stdc++.h&gt;
       using namespace std;
       
       // perform bubble sort
@@ -232,7 +238,7 @@
             padding: 10px; 
             border: 1px solid lightgray; 
             margin: 10px;">
- 
+
       <pre>
       <code>bubbleSort(array)
         swapped &lt;- false
@@ -242,11 +248,10 @@
             swapped &lt;- true
       end bubbleSort</code></pre>
       </div>
-      <hr><h2 id="optimized-example">Optimized Bubble Sort in Python, Java, and C/C++</h2>
+      <hr><h2 id="optimized-example">Optimized Bubble Sort in C++</h2>
      
       <div class="code-editor code-editor--tabbed">
         
-      
         <div class="code-editor__area" id="cpp-code">
           <pre class="exec">
             <div style="background: ghostwhite; 
@@ -254,11 +259,10 @@
             padding: 10px; 
             border: 1px solid lightgray; 
             margin: 10px;">
-  
       <code>// Optimized bubble sort in C++
       
-      #include <iostream>
-      using namespace std;
+        #include &lt;bits/stdc++.h&gt;
+        using namespace std;
       
       // perform bubble sort
       void bubbleSort(int array[], int size) {
@@ -313,7 +317,7 @@
         printArray(data, size);
       }</iostream></code></pre>
 </div>
-        </div>
+</div>
       </div>
       
       <hr><h2 id="complexity">Bubble Sort Complexity</h2>
