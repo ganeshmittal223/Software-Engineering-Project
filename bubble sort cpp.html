@@ -4,7 +4,6 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta name="theme-color" content="#D5E0EB">
 
   <title>Bubble Sort C++</title>
   <meta content="" name="description">
@@ -15,14 +14,13 @@
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link rel='stylesheet' id='lscodehighlight-css-css' href='https://prepinsta.com/wp-content/themes/prepinsta-2020/css/lscodehighlight.css?ver=15.2.34' type='text/css' media='all' />
-  <script type='text/javascript' src='https://prepinsta.com/wp-content/themes/prepinsta-2020/js/lscodehighlight.js?ver=15.2.34' id='lscodehighlight-js-js'></script>
-
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
@@ -30,7 +28,7 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
+  <link rel="stylesheet" href="Sort.css">
   <!-- =======================================================
   * Template Name: Knight - v4.8.0
   * Template URL: https://bootstrapmade.com/knight-free-bootstrap-theme/
@@ -89,7 +87,7 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2><strong>Bubble Sort C++</strong> </h2>
+          <h1 id="heading"><b>Bubble Sort C++</b></h1><br>
           <ol>
             <li><a href="index.html">Home</a></li>
             <li>Bubble Sort</li>
@@ -105,307 +103,414 @@
 
         <div class="row gy-4">
 
-          <div id="node-329" class="node node-algorithm clearfix" about="/dsa/bubble-sort" typeof="sioc:Item foaf:Document">
+          <div id="node-329" class="node node-algorithm clearfix" about="/dsa/bubble-sort"
+            typeof="sioc:Item foaf:Document">
 
-  
+
             <span property="dc:title" content="Bubble Sort" class="rdf-meta element-hidden"></span>
-        
-        <div class="content">
-            <p id="definition"><strong>Bubble sort</strong> is a sorting algorithm that compares two adjacent elements and swaps them until they are in the intended order.</p>
-      
-      <p>Just like the movement of air bubbles in the water that rise up to the surface, each element of the array move to the end in each iteration. Therefore, it is called a bubble sort.</p>
-      
-      <hr><h2 id="working">Working of Bubble Sort</h2>
-      
-      <p>Suppose we are trying to sort the elements in <strong>ascending order</strong>.</p>
-      
-      <p><strong>1. First Iteration (Compare and Swap)</strong></p>
-      
-      <ol><li>Starting from the first index, compare the first and the second elements.</li>
-        <li>If the first element is greater than the second element, they are swapped.</li>
-        <li>Now, compare the second and the third elements. Swap them if they are not in order.</li>
-        <li>The above process goes on until the last element.
-          <figure><img alt="Compare two adjacent elements and swap them if the first element is greater than the next element" height="502.9" src="/D:\Study Material\Software Engineering Project\Templates\Knight\Knight\assets\img\links images/bubble sort 1.png" title="Bubble Sort step 0" width="575"><figcaption>Compare the Adjacent Elements</figcaption></figure></li>
-      </ol><p><strong>2. Remaining Iteration</strong></p>
-      
-      <p>The same process goes on for the remaining iterations.</p>
-      
-      <p>After each iteration, the largest element among the unsorted elements is placed at the end.</p>
-      
-      <figure><img alt="Continue the swapping and put the largest element among the unsorted list at the end" height="414" src="/D:\Study Material\Software Engineering Project\Templates\Knight\Knight\assets\img\links images/bubble sort 2.png" title="Bubble Sort step 1" width="575"><figcaption>Put the largest element at the end</figcaption></figure><p>In each iteration, the comparison takes place up to the last unsorted element.</p>
-      
-      <figure><img alt="Swapping occurs only if the first element is greater than the next element" height="325" src="/D:\Study Material\Software Engineering Project\Templates\Knight\Knight\assets\img\links images/bubble sort 3.png" title="Bubble Sort step 2" width="575"><figcaption>Compare the adjacent elements</figcaption></figure><p>The array is sorted when all the unsorted elements are placed at their correct positions.</p>
-      
-      <figure><img alt="The array is sorted if all the elements are kept in the right order." height="237" src="/D:\Study Material\Software Engineering Project\Templates\Knight\Knight\assets\img\links images/bubble sort 4.png" title="Bubble Sort step 3" width="575"><figcaption>The array is sorted if all elements are kept in the right order</figcaption></figure><hr><h2 id="algorithm">Bubble Sort Algorithm</h2>
-      <div style="background: black; 
+
+            <div class="content">
+              <p id="definition"><strong>Bubble sort</strong> is a <span class="text-primary"> sorting algorithm</span>
+                that
+                compares two
+                adjacent elements
+                and swaps them until they are in the intended order.</p>
+
+              <p>Just like the movement of air bubbles in the water that rise up to the surface, each element of the
+                array move to the end in each iteration. Therefore, it is called a bubble sort.</p>
+
+              <hr>
+              <h2 id="working">Working of Bubble Sort</h2>
+
+              <p>Suppose we are trying to sort the elements in <strong>ascending order</strong>.</p>
+
+              <p><strong>1. First Iteration (Compare and Swap)</strong></p>
+
+              <ol>
+                <li>Starting from the first index, compare the first and the second elements.</li>
+                <li>If the first element is greater than the second element, they are swapped.</li>
+                <li>Now, compare the second and the third elements. Swap them if they are not in order.</li>
+                <li>The above process goes on until the last element.
+                  <figure><img
+                      alt="Compare two adjacent elements and swap them if the first element is greater than the next element"
+                      height="502.9"
+                      src="/D:\Study Material\Software Engineering Project\Templates\Knight\Knight\assets\img\links images/bubble sort 1.png"
+                      title="Bubble Sort step 0" width="575">
+                    <figcaption>Compare the Adjacent Elements</figcaption>
+                  </figure>
+                </li>
+              </ol>
+              <p><strong>2. Remaining Iteration</strong></p>
+
+              <p>The same process goes on for the remaining iterations.</p>
+
+              <p>After each iteration, the largest element among the unsorted elements is placed at the end.</p>
+
+              <figure><img alt="Continue the swapping and put the largest element among the unsorted list at the end"
+                  height="414"
+                  src="/D:\Study Material\Software Engineering Project\Templates\Knight\Knight\assets\img\links images/bubble sort 2.png"
+                  title="Bubble Sort step 1" width="575">
+                <figcaption>Put the largest element at the end</figcaption>
+              </figure>
+              <p>In each iteration, the comparison takes place up to the last unsorted element.</p>
+
+              <figure><img alt="Swapping occurs only if the first element is greater than the next element" height="325"
+                  src="/D:\Study Material\Software Engineering Project\Templates\Knight\Knight\assets\img\links images/bubble sort 3.png"
+                  title="Bubble Sort step 2" width="575">
+                <figcaption>Compare the adjacent elements</figcaption>
+              </figure>
+              <p>The array is sorted when all the unsorted elements are placed at their correct positions.</p>
+
+              <figure><img alt="The array is sorted if all the elements are kept in the right order." height="237"
+                  src="/D:\Study Material\Software Engineering Project\Templates\Knight\Knight\assets\img\links images/bubble sort 4.png"
+                  title="Bubble Sort step 3" width="575">
+                <figcaption>The array is sorted if all elements are kept in the right order</figcaption>
+              </figure>
+              <hr>
+              <h2 id="algorithm">Bubble Sort Algorithm</h2>
+              <div style="background: #383B40; 
             font-size: 20px; 
-          font-family: 'Courier New', Courier, monospace;
-          color: lightgoldenrodyellow;
             padding: 10px; 
-            border: 1px solid white; 
+            border: 1px solid lightgray; 
             margin: 10px;">
-  
-      <pre>
-      <code>bubbleSort(array)
-        for i &lt;- 1 to indexOfLastUnsortedElement-1
-          if leftElement &gt; rightElement
-            swap leftElement and rightElement
-      end bubbleSort</code></pre>
-      </div>
-      <hr><h2 id="code">Bubble Sort Code in C++</h2>
-            
-      <div class="code-editor code-editor--tabbed">
-        
-        <div style="background: ghostwhite; 
+
+                <pre>
+                  <code >
+        <span class="inter1">bubbleSort(array)</span>
+          <span class="inter1">for</span><span class="inter2"> i &lt;- 1 to indexOfLastUnsortedElement-1</span>
+            <span class="inter1">if</span><span class="inter2"> leftElement &gt; rightElement </span>
+              <span class="inter1">swap</span><span class="inter2"> leftElement and rightElement</span>
+        <span class="inter1">end</span><span class="inter2"> bubbleSort</span>
+      </code>
+    </pre>
+              </div>
+              <hr>
+              <h2 id="code">Bubble Sort Code in C++</h2>
+
+              <div class="code-editor code-editor--tabbed">
+
+                <div style="background: #383B40;
+                color: lightgray; 
         font-size: 20px; 
         padding: 10px; 
         border: 1px solid lightgray; 
         margin: 10px;">
-        <div class="code-editor__area" id="cpp-code">
-          <pre class="exec">
-      <code>// Bubble sort in C++
+                  <div class="code-editor__area" id="cpp-code">
+                    <pre class="exec">
+      <code><span class="type1">// Bubble sort in C++</span>
       
-      #include &lt;bits/stdc++.h&gt;
-      using namespace std;
+      <span class="text-info">#include</span> <span class="inter2">&lt;iostream&gt;</span>
+      <span class="type2">using namespace </span><span class="inter1">std;</span>
       
-      // perform bubble sort
-      void bubbleSort(int array[], int size) {
+      <span class="type1">// perform bubble sort</span>
+      <span class="type2">void</span> <span class="text-info">bubbleSort</span>(<span class="type2">int</span> array[],<span class="type2">int</span> size) {
       
-        // loop to access each array element
-        for (int step = 0; step &lt; size; ++step) {
+        <span class="type1">// loop to access each array element</span>
+        <span class="type2">for</span> (<span class="type2">int</span> step = 0; step &lt; size; ++step) {
             
-          // loop to compare array elements
-          for (int i = 0; i &lt; size - step; ++i) {
+          <span class="type1">// loop to compare array elements</span>
+          <span class="type2">for</span> (<span class="type2">int</span> i = 0; i &lt; size - step; ++i) {
       
-            // compare two adjacent elements
-            // change &gt; to &lt; to sort in descending order
-            if (array[i] &gt; array[i + 1]) {
+            <span class="type1">// compare two adjacent elements
+            // change &gt; to &lt; to sort in descending order</span>
+            <span class="type2">if</span> (<span class="inter1">array</span>[i] &gt; <span class="inter1">array</span>[i + 1]) {
       
-              // swapping elements if elements
-              // are not in the intended order
-              int temp = array[i];
-              array[i] = array[i + 1];
-              array[i + 1] = temp;
+              <span class="type1">// swapping elements if elements
+              // are not in the intended order</span>
+              <span class="type2">int</span> temp = <span class="inter1">array</span>[i];
+              <span class="inter1">array</span>[i] = <span class="inter1">array</span>[i + 1];
+              <span class="inter1">array</span>[i + 1] = temp;
             }
           }
         }
       }
       
-      // print array
-      void printArray(int array[], int size) {
-        for (int i = 0; i &lt; size; ++i) {
-          cout &lt;&lt; "  " &lt;&lt; array[i];
+      <span class="type1">// print array</span>
+      <span class="type2">void</span> <span class="text-info">printArray</span>(<span class="type2">int</span> <span class="inter1">array</span>[], <span class="type2">int</span> size) {
+        <span class="type2">for</span> (<span class="type2">int</span> i = 0; i &lt; size; ++i) {
+          <span class="inter1">cout</span> &lt;&lt; <span class="inter2">"  "</span> &lt;&lt; <span class="inter1">array</span>[i];
         }
-        cout &lt;&lt; "\n";
+        <span class="inter1">cout</span> &lt;&lt; <span class="inter2">"\n"</span>;
       }
       
-      int main() {
-        int data[] = {-2, 45, 0, 11, -9};
+      <span class="type2">int</span> main() {
+        <span class="type2">int</span> data[] = {<span class="inter1">-2, 45, 0, 11, -9</span>};
         
-        // find array's length
-        int size = sizeof(data) / sizeof(data[0]);
+        <span class="type1">// find array's length</span>
+        <span class="type2">int</span> size = <span class="type2">sizeof</span>(data) / <span class="type2">sizeof</span>(data[0]);
         
         bubbleSort(data, size);
         
-        cout &lt;&lt; "Sorted Array in Ascending Order:\n";  
+        <span class="inter1">cout</span> &lt;&lt; <span class="inter2">"Sorted Array in Ascending Order:\n"</span>;  
         printArray(data, size);
       }</code></pre>
-      </div>
-        </div>
-      </div>
-      
-      <hr><h2 id="optimized-algorithm">Optimized Bubble Sort Algorithm</h2>
-      
-          <style>
-          #div-gpt-ad-Programizcom37046 {display:none; width: 728px; height: 90px; }
-          #div-gpt-ad-Programizcom36796 {display: block;}
-          @media(min-width: 992px) { #div-gpt-ad-Programizcom37046 {display: block;} #div-gpt-ad-Programizcom36796 {display: none;}}
-          </style>
-          
-          <div id="div-gpt-ad-Programizcom36796" style="margin: 32px 0; min-height: 250px;"> </div>
-          <div class="clearfix"></div>
-          <p>In the above algorithm, all the comparisons are made even if the array is already sorted.</p>
-          <p>This increases the execution time.</p>
-          <p>To solve this, we can introduce an extra variable <var>swapped</var>. The value of <var>swapped</var> is set true if there occurs swapping of elements. Otherwise, it is set <strong>false</strong>.</p>
-      
-      <p>After an iteration, if there is no swapping, the value of <var>swapped</var> will be <strong>false</strong>. This means elements are already sorted and there is no need to perform further iterations.</p>
-      
-      <p>This will reduce the execution time and helps to optimize the bubble sort.</p>
-      
-      <p><strong>Algorithm for optimized bubble sort is</strong></p>
-      <div style="background: ghostwhite;
+                  </div>
+                </div>
+              </div>
+
+              <hr>
+              <h2 id="optimized-algorithm">Optimized Bubble Sort Algorithm</h2>
+
+              <style>
+                #div-gpt-ad-Programizcom37046 {
+                  display: none;
+                  width: 728px;
+                  height: 90px;
+                }
+
+                #div-gpt-ad-Programizcom36796 {
+                  display: block;
+                }
+
+                @media(min-width: 992px) {
+                  #div-gpt-ad-Programizcom37046 {
+                    display: block;
+                  }
+
+                  #div-gpt-ad-Programizcom36796 {
+                    display: none;
+                  }
+                }
+              </style>
+
+              <div id="div-gpt-ad-Programizcom36796" style="margin: 32px 0; min-height: 250px;"> </div>
+              <div class="clearfix"></div>
+              <p>In the above algorithm, all the comparisons are made even if the array is already sorted.</p>
+              <p>This increases the execution time.</p>
+              <p>To solve this, we can introduce an extra variable <var>swapped</var>. The value of <var>swapped</var>
+                is set true if there occurs swapping of elements. Otherwise, it is set <strong>false</strong>.</p>
+
+              <p>After an iteration, if there is no swapping, the value of <var>swapped</var> will be
+                <strong>false</strong>. This means elements are already sorted and there is no need to perform further
+                iterations.
+              </p>
+
+              <p>This will reduce the execution time and helps to optimize the bubble sort.</p>
+
+              <p><strong>Algorithm for optimized bubble sort is</strong></p>
+              <div style="background: #383B40;
             font-size: 20px;
+            color: #98C379;
             padding: 10px; 
             border: 1px solid lightgray; 
             margin: 10px;">
 
-      <pre>
-      <code>bubbleSort(array)
-        swapped &lt;- false
-        for i &lt;- 1 to indexOfLastUnsortedElement-1
-          if leftElement &gt; rightElement
-            swap leftElement and rightElement
-            swapped &lt;- true
-      end bubbleSort</code></pre>
-      </div>
-      <hr><h2 id="optimized-example">Optimized Bubble Sort in C++</h2>
-     
-      <div class="code-editor code-editor--tabbed">
-        
-        <div class="code-editor__area" id="cpp-code">
-          <pre class="exec">
-            <div style="background: ghostwhite; 
+                <pre>
+      <code><span class="inter1">bubbleSort(array)</span>
+        <span class="inter1">swapped</span> &lt;- false
+        <span class="inter1">for</span> i &lt;- 1 to indexOfLastUnsortedElement-1
+          <span class="inter1">if</span> leftElement &gt; rightElement
+            <span class="inter1">swap</span> leftElement and rightElement
+            <span class="inter1">swapped<span class="inter1"></span> &lt;- true
+      <span class="inter1">end bubbleSort</span></code></pre>
+              </div>
+              <hr>
+              <h2 id="optimized-example">Optimized Bubble Sort in Python, Java, and C/C++</h2>
+
+              <div class="code-editor code-editor--tabbed">
+
+
+                <div class="code-editor__area" id="cpp-code">
+                  <pre class="exec">
+            <div style="background: #383B40; 
             font-size: 20px; 
+            color: lightgray;
             padding: 10px; 
             border: 1px solid lightgray; 
             margin: 10px;">
-      <code>// Optimized bubble sort in C++
+  
+      <code><span class="type1">// Optimized bubble sort in C++</span>
       
-        #include &lt;bits/stdc++.h&gt;
-        using namespace std;
+      <span class="text-info">#include</span> <span class="inter2">&lt;iostream&gt;</span>
+      <span class="type2">using namespace </span><span class="inter1">std;</span>
       
-      // perform bubble sort
-      void bubbleSort(int array[], int size) {
+      <span class="type1">// perform bubble sort</span>
+      <span class="type2">void</span> <span class="text-info">bubbleSort</span>(<span class="type2">int</span> <span class="inter1">array</span>[],<span class="type2">int</span> size) {
           
-        // loop to access each array element
-        for (int step = 0; step &lt; (size-1); ++step) {
+        <span class="type1">// loop to access each array element</span>
+        <span class="type2">for</span> (<span class="type2">int</span> step = 0; step &lt; (size-1); ++step) {
             
-          // check if swapping occurs
-          int swapped = 0;
+          <span class="type1">// check if swapping occurs</span>
+          <span class="type2">int</span> swapped = 0;
           
-          // loop to compare two elements
-          for (int i = 0; i &lt; (size-step-1); ++i) {
+          <span class="type1">// loop to compare two elements</span>
+          <span class="type2">for</span> (<span class="type2">int</span> i = 0; i &lt; (size-step-1); ++i) {
               
-            // compare two array elements
-            // change &gt; to &lt; to sort in descending order
-            if (array[i] &gt; array[i + 1]) {
+            <span class="type1">// compare two array elements
+            // change &gt; to &lt; to sort in descending order</span>
+            <span class="type2">if</span> (<span class="inter1">array</span>[i] &gt; <span class="inter1">array</span>[i + 1]) {
       
-              // swapping occurs if elements
-              // are not in intended order 
-              int temp = array[i];
-              array[i] = array[i + 1];
-              array[i + 1] = temp;
+              <span class="type1">// swapping occurs if elements
+              // are not in intended order</span>
+              <span class="type2">int</span> temp = <span class="inter1">array</span>[i];
+              <span class="inter1">array</span>[i] = <span class="inter1">array</span>[i + 1];
+              <span class="inter1">array</span>[i + 1] = temp;
               
               swapped = 1;
             }
           }
       
-          // no swapping means the array is already sorted
-          // so no need of further comparison
-          if (swapped == 0)
+          <span class="type1">// no swapping means the array is already sorted
+          // so no need of further comparison</span>
+          <span class="type2">if</span> (swapped == 0)
             break;
         }
       }
       
-      // print an array
-      void printArray(int array[], int size) {
-        for (int i = 0; i &lt; size; ++i) {
-          cout &lt;&lt; "  " &lt;&lt; array[i];
+      <span class="type1">// print an array</span>
+      <span class="type2">void</span> <span class = "text-info">printArray</span>(<span class="type2">int</span> <span class="inter1">array</span>[], <span class="type2">int</span> size) {
+        <span class="type2">for</span> (<span class="type2">int</span> i = 0; i &lt; size; ++i) {
+          <span class="inter1">cout</span> &lt;&lt; "  " &lt;&lt; <span class="inter1">array</span>[i];
         }
-        cout &lt;&lt; "\n";
+        <span class="inter1">cout</span> &lt;&lt; "\n";
       }
       
-      int main() {
-        int data[] = {-2, 45, 0, 11, -9};
+      <span class="type2">int</span> <span class="text-info">main</span>() {
+        <span class="type2">int</span> data[] = {<span class="inter1">-2, 45, 0, 11, -9</span>};
         
-        // find the array's length
-        int size = sizeof(data) / sizeof(data[0]);
+        <span class="type1">// find the array's length</span>
+        <span class="type2">int</span> size = <span class="type2">sizeof</span>(data) / <span class="type2">sizeof</span>(data[0]);
         
         bubbleSort(data, size);
         
-        cout &lt;&lt; "Sorted Array in Ascending Order:\n";
+        <span class="inter1">cout</span> &lt;&lt; <span class="inter2">"Sorted Array in Ascending Order:\n"</span>;
         printArray(data, size);
-      }</iostream></code></pre>
-</div>
-</div>
-      </div>
-      
-      <hr><h2 id="complexity">Bubble Sort Complexity</h2>
-      
-      <div class="table-responsive">
-        <table><tbody><tr><th><strong>Time Complexity</strong></th>
-              <td> </td>
-            </tr><tr><td>Best</td>
-              <td>O(n)</td>
-            </tr><tr><td>Worst</td>
-              <td>O(n<sup>2</sup>)</td>
-            </tr><tr><td>Average</td>
-              <td>O(n<sup>2</sup>)</td>
-            </tr><tr><th><strong>Space Complexity</strong></th>
-              <td>O(1)</td>
-            </tr><tr><th><strong>Stability</strong></th>
-              <td>Yes</td>
-            </tr></tbody></table></div>
-      
-      <hr><h3>Complexity in Detail</h3>
-      
-      <p>Bubble Sort compares the adjacent elements.</p>
-      
-      <div class="table-responsive">
-        <table><tbody><tr><th>Cycle</th>
-              <th>Number of Comparisons</th>
-            </tr><tr><td>1st</td>
-              <td>(n-1)</td>
-            </tr><tr><td>2nd</td>
-              <td>(n-2)</td>
-            </tr><tr><td>3rd</td>
-              <td>(n-3)</td>
-            </tr><tr><td>.......</td>
-              <td>......</td>
-            </tr><tr><td>last</td>
-              <td>1</td>
-            </tr></tbody></table></div>
-      
-      <p>Hence, the number of comparisons is</p>
-      
-      <pre>
+      }</code></pre>
+                </div>
+              </div>
+            </div>
+
+            <hr>
+            <h2 id="complexity">Bubble Sort Complexity</h2>
+
+            <div class="table-responsive">
+              <table>
+                <tbody>
+                  <tr>
+                    <th><strong>Time Complexity</strong></th>
+                    <td> </td>
+                  </tr>
+                  <tr>
+                    <td>Best</td>
+                    <td>O(n)</td>
+                  </tr>
+                  <tr>
+                    <td>Worst</td>
+                    <td>O(n<sup>2</sup>)</td>
+                  </tr>
+                  <tr>
+                    <td>Average</td>
+                    <td>O(n<sup>2</sup>)</td>
+                  </tr>
+                  <tr>
+                    <th><strong>Space Complexity</strong></th>
+                    <td>O(1)</td>
+                  </tr>
+                  <tr>
+                    <th><strong>Stability</strong></th>
+                    <td>Yes</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <hr>
+            <h3>Complexity in Detail</h3>
+
+            <p>Bubble Sort compares the adjacent elements.</p>
+
+            <div class="table-responsive">
+              <table>
+                <tbody>
+                  <tr>
+                    <th>Cycle</th>
+                    <th>Number of Comparisons</th>
+                  </tr>
+                  <tr>
+                    <td>1st</td>
+                    <td>(n-1)</td>
+                  </tr>
+                  <tr>
+                    <td>2nd</td>
+                    <td>(n-2)</td>
+                  </tr>
+                  <tr>
+                    <td>3rd</td>
+                    <td>(n-3)</td>
+                  </tr>
+                  <tr>
+                    <td>.......</td>
+                    <td>......</td>
+                  </tr>
+                  <tr>
+                    <td>last</td>
+                    <td>1</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <p>Hence, the number of comparisons is</p>
+
+            <pre>
       <code>(n-1) + (n-2) + (n-3) +.....+ 1 = n(n-1)/2</code></pre>
-      
-      <p>nearly equals to <code>n<sup>2</sup></code></p>
-      
-      <p>Hence, <strong>Complexity:</strong> <var>O(n<sup>2</sup>)</var></p>
-      
-      <p>Also, if we observe the code, bubble sort requires two loops. Hence, the complexity is <code>n*n = n<sup>2</sup></code></p>
-      
-      <h3>1. Time Complexities</h3>
-      
-      <ul><li><strong>Worst Case Complexity:</strong> <code>O(n<sup>2</sup>)</code><br>
-          If we want to sort in ascending order and the array is in descending order then the worst case occurs.</li>
-        <li><strong>Best Case Complexity:</strong> <code>O(n)</code><br>
-          If the array is already sorted, then there is no need for sorting.</li>
-        <li><strong>Average Case Complexity: </strong><code>O(n<sup>2</sup>)</code><br>
-          It occurs when the elements of the array are in jumbled order (neither ascending nor descending).</li>
-      </ul><h3>2. Space Complexity</h3>
-      
-      <ul><li>Space complexity is <code>O(1)</code> because an extra variable is used for swapping.</li>
-        <li>In the <strong>optimized bubble sort algorithm</strong>, two extra variables are used. Hence, the space complexity will be <code>O(2)</code>.</li>
-      </ul><hr><h2 id="application">Bubble Sort Applications</h2>
-      
-      <p>Bubble sort is used if</p>
-      
-      <ul><li>complexity does not matter</li>
-        <li>short and simple code is preferred</li>
 
-        </ul>
-        </div>
-        </div>
-        </div>
-        </div>
-        </section>
-        
+            <p>nearly equals to <code>n<sup>2</sup></code></p>
 
-         
+            <p>Hence, <strong>Complexity:</strong> <var>O(n<sup>2</sup>)</var></p>
 
+            <p>Also, if we observe the code, bubble sort requires two loops. Hence, the complexity is
+              <code>n*n = n<sup>2</sup></code>
+            </p>
+
+            <h3>1. Time Complexities</h3>
+
+            <ul>
+              <li><strong>Worst Case Complexity:</strong> <code>O(n<sup>2</sup>)</code><br>
+                If we want to sort in ascending order and the array is in descending order then the worst case occurs.
+              </li>
+              <li><strong>Best Case Complexity:</strong> <code>O(n)</code><br>
+                If the array is already sorted, then there is no need for sorting.</li>
+              <li><strong>Average Case Complexity: </strong><code>O(n<sup>2</sup>)</code><br>
+                It occurs when the elements of the array are in jumbled order (neither ascending nor descending).</li>
+            </ul>
+            <h3>2. Space Complexity</h3>
+
+            <ul>
+              <li>Space complexity is <code>O(1)</code> because an extra variable is used for swapping.</li>
+              <li>In the <strong>optimized bubble sort algorithm</strong>, two extra variables are used. Hence, the
+                space complexity will be <code>O(2)</code>.</li>
+            </ul>
+            <hr>
+            <h2 id="application">Bubble Sort Applications</h2>
+
+            <p>Bubble sort is used if</p>
+
+            <ul>
+              <li>complexity does not matter</li>
+              <li>short and simple code is preferred</li>
+
+            </ul>
+          </div>
         </div>
-
       </div>
-      
+      </div>
+    </section>
+
+
+
+
+    </div>
+
+    </div>
+
     </section><!-- End Portfolio Details Section -->
 
   </main><!-- End #main -->
 
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/aos/aos.js"></script>

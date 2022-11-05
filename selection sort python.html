@@ -6,7 +6,7 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta name="theme-color" content="#D5E0EB">
 
-  <title>Selection Sort C++</title>
+  <title>Selection Sort Python</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -15,13 +15,19 @@
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link rel='stylesheet' id='lscodehighlight-css-css' href='https://prepinsta.com/wp-content/themes/prepinsta-2020/css/lscodehighlight.css?ver=15.2.34' type='text/css' media='all' />
-  <script type='text/javascript' src='https://prepinsta.com/wp-content/themes/prepinsta-2020/js/lscodehighlight.js?ver=15.2.34' id='lscodehighlight-js-js'></script>
+  <link rel='stylesheet' id='lscodehighlight-css-css'
+    href='https://prepinsta.com/wp-content/themes/prepinsta-2020/css/lscodehighlight.css?ver=15.2.34' type='text/css'
+    media='all' />
+  <script type='text/javascript'
+    src='https://prepinsta.com/wp-content/themes/prepinsta-2020/js/lscodehighlight.js?ver=15.2.34'
+    id='lscodehighlight-js-js'></script>
 
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
@@ -30,6 +36,7 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="Sort.css">
 
   <!-- =======================================================
   * Template Name: Knight - v4.8.0
@@ -89,7 +96,7 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2><strong>Selection Sort C++</strong> </h2>
+          <h1 id="heading"><b>Selection Sort Python</b></h1><br>
           <ol>
             <li><a href="index.html">Home</a></li>
             <li>Selection Sort</li>
@@ -105,172 +112,281 @@
 
         <div class="row gy-4">
 
-          <div id="node-329" class="node node-algorithm clearfix" about="/dsa/bubble-sort" typeof="sioc:Item foaf:Document">
+          <div id="node-329" class="node node-algorithm clearfix" about="/dsa/bubble-sort"
+            typeof="sioc:Item foaf:Document">
 
-  
+
             <span property="dc:title" content="Bubble Sort" class="rdf-meta element-hidden"></span>
-        
-        <div class="content">
-            <p id="definition"><strong>Selection sort</strong> is a sorting algorithm that selects the smallest element from an unsorted list in each iteration and places that element at the beginning of the unsorted list.  </p>
-      
-          
-      <hr><h2 id="working">Working of Selection Sort</h2>
 
-<ol><li>Set the first element as <code>minimum</code>.
-
-		<figure><img alt="Selection Sort Steps" height="85" src="assets/img/links images/selection sort 1.png" title="New Array Initialized" width="330"><figcaption>Select first element as minimum</figcaption></figure></li>
-	<li>Compare <code>minimum</code> with the second element. If the second element is smaller than <code>minimum</code>, assign the second element as <code>minimum</code>.<br><br>
-		Compare <code>minimum</code> with the third element. Again, if the third element is smaller, then assign <code>minimum</code> to the third element otherwise do nothing. The process goes on until the last element.
-		<figure><img alt="Selection Sort Steps" height="290" src="assets/img/links images/selection sort 2.png" title="comparison" width="330"><figcaption>Compare minimum with the remaining elements</figcaption></figure></li>
-	<li>After each iteration, <code>minimum</code> is placed in the front of the unsorted list.
-		<figure><img alt="Selection Sort Steps" height="122" src="assets/img/links images/selection sort 3.png" title="swapping" width="330"><figcaption>Swap the first with minimum</figcaption></figure></li>
-	<li>For each iteration, indexing starts from the first unsorted element. Step 1 to 3 are repeated until all the elements are placed at their correct positions.
-		<figure><img alt="Selection Sort Steps" height="506" src="assets/img/links images/selection sort 4.png" title="Selection Sort Step 0" width="440"><figcaption>The first iteration</figcaption></figure><figure><img alt="Selection sort steps" height="422" src="assets/img/links images/selection sort 5.png" title="Selection sort steps 1" width="440"><figcaption>The second iteration</figcaption></figure><figure><img alt="Selection sort steps" height="343" src="assets/img/links images/selection sort 6.png" title="Selection sort steps 2" width="440"><figcaption>The third iteration</figcaption></figure><figure><img alt="Selection sort steps" height="260" src="assets/img/links images/selection sort 7.png" title="Selection sort steps 3" width="440"><figcaption>The fourth iteration</figcaption></figure></li>
-</ol><hr><h2 id="algorithm">Selection Sort Algorithm</h2>
-
-<pre>
-<code>selectionSort(array, size)
-  repeat (size - 1) times
-  set the first unsorted element as the minimum
-  for each of the unsorted elements
-    if element &lt; currentMinimum
-      set element as new minimum
-  swap minimum with first unsorted position
-end selectionSort</code></pre>
-
-<hr><h2 id="code">Selection Sort Code in Python, Java, and C/C++</h2>
+            <div class="content">
+              <p id="definition"><strong>Selection sort</strong> is a sorting
+                <span class="text-primary">algorithm</span> that selects the smallest
+                element from an unsorted list in each iteration and places that element at the beginning of the unsorted
+                list.
+              </p>
 
 
+              <hr>
+              <h2 id="working">Working of Selection Sort</h2>
 
-<div class="code-editor code-editor--tabbed">
-	<div class="code-editor__area" id="python-code">
-		<pre class="exec">
+              <ol>
+                <li>Set the first element as <code>minimum</code>.
+
+                  <figure><img alt="Selection Sort Steps" height="85" src="assets/img/links images/selection sort 1.png"
+                      title="New Array Initialized" width="330">
+                    <figcaption>Select first element as minimum</figcaption>
+                  </figure>
+                </li>
+                <li>Compare <code>minimum</code> with the second element. If the second element is smaller than
+                  <code>minimum</code>, assign the second element as <code>minimum</code>.<br><br>
+                  Compare <code>minimum</code> with the third element. Again, if the third element is smaller, then
+                  assign <code>minimum</code> to the third element otherwise do nothing. The process goes on until the
+                  last element.
+                  <figure><img alt="Selection Sort Steps" height="290"
+                      src="assets/img/links images/selection sort 2.png" title="comparison" width="330">
+                    <figcaption>Compare minimum with the remaining elements</figcaption>
+                  </figure>
+                </li>
+                <li>After each iteration, <code>minimum</code> is placed in the front of the unsorted list.
+                  <figure><img alt="Selection Sort Steps" height="122"
+                      src="assets/img/links images/selection sort 3.png" title="swapping" width="330">
+                    <figcaption>Swap the first with minimum</figcaption>
+                  </figure>
+                </li>
+                <li>For each iteration, indexing starts from the first unsorted element. Step 1 to 3 are repeated until
+                  all the elements are placed at their correct positions.
+                  <figure><img alt="Selection Sort Steps" height="506"
+                      src="assets/img/links images/selection sort 4.png" title="Selection Sort Step 0" width="440">
+                    <figcaption>The first iteration</figcaption>
+                  </figure>
+                  <figure><img alt="Selection sort steps" height="422"
+                      src="assets/img/links images/selection sort 5.png" title="Selection sort steps 1" width="440">
+                    <figcaption>The second iteration</figcaption>
+                  </figure>
+                  <figure><img alt="Selection sort steps" height="343"
+                      src="assets/img/links images/selection sort 6.png" title="Selection sort steps 2" width="440">
+                    <figcaption>The third iteration</figcaption>
+                  </figure>
+                  <figure><img alt="Selection sort steps" height="260"
+                      src="assets/img/links images/selection sort 7.png" title="Selection sort steps 3" width="440">
+                    <figcaption>The fourth iteration</figcaption>
+                  </figure>
+                </li>
+              </ol>
+              <hr>
+              <h2 id="algorithm">Selection Sort Algorithm</h2>
+              <div style="background: #383B40;
+                color: #98C379; 
+        font-size: 20px; 
+        padding: 10px; 
+        border: 1px solid lightgray; 
+        margin: 10px;">
+                <pre>
+<code><span class="inter1">selectionSort(array, size)</span>
+  <span class="inter1">repeat</span> (size - 1) times
+  <span class="inter1">set</span> the first unsorted element as the minimum
+  <span class="inter1">for</span> each of the unsorted elements
+    <span class="inter1">if</span> element &lt; currentMinimum
+      <span class="inter1">set</span> element as new minimum
+    <span class="inter1">swap</span> minimum with first unsorted position
+<span class="inter1">end</span> selectionSort</code></pre>
+              </div>
+              <hr>
+              <h2 id="code">Selection Sort Code in Python</h2>
+
+              <div style="background: #383B40;
+        color: lightgray; 
+        font-size: 20px; 
+        padding: 10px; 
+        border: 1px solid lightgray; 
+        margin: 10px;">
+                <pre class="exec">
 <code>
+<span class = "type1"># Selection sort in Python</span>
 
-	<div class="code-editor__area" id="cpp-code">
-		<pre class="exec">
-<code>
-  # Selection sort in Python
-
-def selectionSort(array, size):
+<span class="type2">def</span> <span class="text-info">selectionSort</span>(<span class="inter1">array</span>, size):
    
-    for step in range(size):
+    <span class="type2">for</span> step <span class="type2">in</span> range(size):
         min_idx = step
 
-        for i in range(step + 1, size):
+        <span class="type2">for</span> i <span class="type2">in</span> range(step + 1, size):
          
-            # to sort in descending order, change > to < in this line
-            # select the minimum element in each loop
-            if array[i] < array[min_idx]:
+            <span class="type1"># to sort in descending order, change > to < in this line</span>
+            <span class="type1"># select the minimum element in each loop</span>
+            <span class="type2">if</span> <span class="inter1">array</span>[i] < <span class="inter1">array</span>[min_idx]:
                 min_idx = i
          
-        # put min at the correct position
-        (array[step], array[min_idx]) = (array[min_idx], array[step])
+        <span class="type1"># put min at the correct position</span>
+        (<span class="inter1">array</span>[step], <span class="inter1">array</span>[min_idx]) = (<span class="inter1">array</span>[min_idx], <span class="inter1">array</span>[step])
 
 
-data = [-2, 45, 0, 11, -9]
+data = [<span class="inter1">-2, 45, 0, 11, -9</span>]
 size = len(data)
-selectionSort(data, size)
-print('Sorted Array in Ascending Order:')
-print(data)
+<span class="text-info">selectionSort</span>(data, size)
+<span class="type2">print</span>(<span class="inter2">'Sorted Array in Ascending Order:'</span>)
+<span class="type2">print</span>(data)
 </code></pre>
-	</div>
-</div>
+              </div>
 
-<hr><h2 id="complexity">Selection Sort Complexity</h2>
+              <hr>
+              <h2 id="complexity">Selection Sort Complexity</h2>
 
-<div class="table-responsive">
-	<table><tbody><tr><th><strong>Time Complexity</strong></th>
-				<td> </td>
-			</tr><tr><td>Best</td>
-				<td>O(n<sup>2</sup>)</td>
-			</tr><tr><td>Worst</td>
-				<td>O(n<sup>2</sup>)</td>
-			</tr><tr><td>Average</td>
-				<td>O(n<sup>2</sup>)</td>
-			</tr><tr><th><strong>Space Complexity</strong></th>
-				<td>O(1)</td>
-			</tr><tr><th><strong>Stability</strong></th>
-				<td>No</td>
-			</tr></tbody></table></div>
+              <div class="table-responsive">
+                <table>
+                  <tbody>
+                    <tr>
+                      <th><strong>Time Complexity</strong></th>
+                      <td> </td>
+                    </tr>
+                    <tr>
+                      <td>Best</td>
+                      <td>O(n<sup>2</sup>)</td>
+                    </tr>
+                    <tr>
+                      <td>Worst</td>
+                      <td>O(n<sup>2</sup>)</td>
+                    </tr>
+                    <tr>
+                      <td>Average</td>
+                      <td>O(n<sup>2</sup>)</td>
+                    </tr>
+                    <tr>
+                      <th><strong>Space Complexity</strong></th>
+                      <td>O(1)</td>
+                    </tr>
+                    <tr>
+                      <th><strong>Stability</strong></th>
+                      <td>No</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
 
-<hr><div class="table-responsive">
-	<table><tbody><tr><th>Cycle</th>
-				<th>Number of Comparison</th>
-			</tr><tr><td>1st</td>
-				<td>(n-1)</td>
-			</tr><tr><td>2nd</td>
-				<td>(n-2)</td>
-			</tr><tr><td>3rd</td>
-				<td>(n-3)</td>
-			</tr><tr><td>...</td>
-				<td>...</td>
-			</tr><tr><td>last</td>
-				<td>1</td>
-			</tr></tbody></table></div>
+              <hr>
+              <div class="table-responsive">
+                <table>
+                  <tbody>
+                    <tr>
+                      <th>Cycle</th>
+                      <th>Number of Comparison</th>
+                    </tr>
+                    <tr>
+                      <td>1st</td>
+                      <td>(n-1)</td>
+                    </tr>
+                    <tr>
+                      <td>2nd</td>
+                      <td>(n-2)</td>
+                    </tr>
+                    <tr>
+                      <td>3rd</td>
+                      <td>(n-3)</td>
+                    </tr>
+                    <tr>
+                      <td>...</td>
+                      <td>...</td>
+                    </tr>
+                    <tr>
+                      <td>last</td>
+                      <td>1</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
 
-<p>Number of comparisons: <code>(n - 1) + (n - 2) + (n - 3) + ..... + 1 = n(n - 1) / 2</code> nearly equals to <code>n<sup>2</sup></code>.</p>
+              <p>Number of comparisons: <code>(n - 1) + (n - 2) + (n - 3) + ..... + 1 = n(n - 1) / 2</code> nearly
+                equals to <code>n<sup>2</sup></code>.</p>
 
-<p><strong>Complexity</strong> = <code>O(n<sup>2</sup>)</code></p>
+              <p><strong>Complexity</strong> = <code>O(n<sup>2</sup>)</code></p>
 
-<p>Also, we can analyze the complexity by simply observing the number of loops. There are 2 loops so the complexity is <code>n*n = n<sup>2</sup></code>.</p>
+              <p>Also, we can analyze the complexity by simply observing the number of loops. There are 2 loops so the
+                complexity is <code>n*n = n<sup>2</sup></code>.</p>
 
-<p><strong>Time Complexities:</strong></p>
+              <p><strong>Time Complexities:</strong></p>
 
-<ul><li><strong>Worst Case Complexity:</strong> <code>O(n<sup>2</sup>)</code><br>
-		If we want to sort in ascending order and the array is in descending order then, the worst case occurs.</li>
-	<li><strong>Best Case Complexity:</strong> <code>O(n<sup>2</sup>)</code><br>
-		It occurs when the array is already sorted</li>
-	<li><strong>Average Case Complexity:</strong> <code>O(n<sup>2</sup>)</code><br>
-		It occurs when the elements of the array are in jumbled order (neither ascending nor descending).</li>
-</ul><p></p><div id="block-inject-1" class="block-inject block-inject-1">
-    
-    
-    
-    <style>
-    #div-gpt-ad-Programizcom37046 {display:none; width: 728px; height: 90px; }
-    #div-gpt-ad-Programizcom36796 {display: block;}
-    @media(min-width: 992px) { #div-gpt-ad-Programizcom37046 {display: block;} #div-gpt-ad-Programizcom36796 {display: none;}}
-    </style><div id="div-gpt-ad-Programizcom37046" style="margin: 32px 0;">
+              <ul>
+                <li><strong>Worst Case Complexity:</strong> <code>O(n<sup>2</sup>)</code><br>
+                  If we want to sort in ascending order and the array is in descending order then, the worst case
+                  occurs.</li>
+                <li><strong>Best Case Complexity:</strong> <code>O(n<sup>2</sup>)</code><br>
+                  It occurs when the array is already sorted</li>
+                <li><strong>Average Case Complexity:</strong> <code>O(n<sup>2</sup>)</code><br>
+                  It occurs when the elements of the array are in jumbled order (neither ascending nor descending).</li>
+              </ul>
+              <p></p>
+              <div id="block-inject-1" class="block-inject block-inject-1">
+
+
+
+                <style>
+                  #div-gpt-ad-Programizcom37046 {
+                    display: none;
+                    width: 728px;
+                    height: 90px;
+                  }
+
+                  #div-gpt-ad-Programizcom36796 {
+                    display: block;
+                  }
+
+                  @media(min-width: 992px) {
+                    #div-gpt-ad-Programizcom37046 {
+                      display: block;
+                    }
+
+                    #div-gpt-ad-Programizcom36796 {
+                      display: none;
+                    }
+                  }
+                </style>
+                <div id="div-gpt-ad-Programizcom37046" style="margin: 32px 0;">
+                </div>
+
+                <div id="div-gpt-ad-Programizcom36796" style="margin: 32px 0; min-height: 250px;">
+                </div>
+              </div>
+              <div class="clearfix"></div>
+              <p>The time complexity of the selection sort is the same in all cases. At every step, you have to find the
+                minimum element and put it in the right place. The minimum element is not known until the end of the
+                array is not reached.</p>
+
+              <p><strong>Space Complexity:</strong></p>
+
+              <p>Space complexity is <code>O(1)</code> because an extra variable <code>temp</code> is used.</p>
+
+              <hr>
+              <h2 id="application">Selection Sort Applications</h2>
+
+              <p>The selection sort is used when</p>
+
+              <ul>
+                <li>a small list is to be sorted</li>
+                <li>cost of swapping does not matter</li>
+                <li>checking of all the elements is compulsory</li>
+                <li>cost of writing to a memory matters like in flash memory (number of writes/swaps is
+                  <code>O(n)</code> as compared to <code>O(n<sup>2</sup>)</code> of bubble sort)
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+    </section>
+
+
+
+
     </div>
-    
-    <div id="div-gpt-ad-Programizcom36796" style="margin: 32px 0; min-height: 250px;">
+
     </div>
-    </div><div class="clearfix"></div><p>The time complexity of the selection sort is the same in all cases. At every step, you have to find the minimum element and put it in the right place. The minimum element is not known until the end of the array is not reached.</p>
 
-<p><strong>Space Complexity:</strong></p>
-
-<p>Space complexity is <code>O(1)</code> because an extra variable <code>temp</code> is used.</p>
-
-<hr><h2 id="application">Selection Sort Applications</h2>
-
-<p>The selection sort is used when</p>
-
-<ul><li>a small list is to be sorted</li>
-	<li>cost of swapping does not matter</li>
-	<li>checking of all the elements is compulsory</li>
-	<li>cost of writing to a memory matters like in flash memory (number of writes/swaps is <code>O(n)</code> as compared to <code>O(n<sup>2</sup>)</code> of bubble sort)</li>
-
-        </ul>
-        </div>
-        </div>
-        </div>
-        </div>
-        </section>
-        
-
-         
-
-        </div>
-
-      </div>
-      
     </section><!-- End Portfolio Details Section -->
 
   </main><!-- End #main -->
 
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/aos/aos.js"></script>

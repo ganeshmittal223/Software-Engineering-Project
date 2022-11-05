@@ -6,7 +6,7 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta name="theme-color" content="#D5E0EB">
 
-  <title>Insertion Sort C++</title>
+  <title>Insertion Sort Python</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -15,13 +15,19 @@
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link rel='stylesheet' id='lscodehighlight-css-css' href='https://prepinsta.com/wp-content/themes/prepinsta-2020/css/lscodehighlight.css?ver=15.2.34' type='text/css' media='all' />
-  <script type='text/javascript' src='https://prepinsta.com/wp-content/themes/prepinsta-2020/js/lscodehighlight.js?ver=15.2.34' id='lscodehighlight-js-js'></script>
+  <link rel='stylesheet' id='lscodehighlight-css-css'
+    href='https://prepinsta.com/wp-content/themes/prepinsta-2020/css/lscodehighlight.css?ver=15.2.34' type='text/css'
+    media='all' />
+  <script type='text/javascript'
+    src='https://prepinsta.com/wp-content/themes/prepinsta-2020/js/lscodehighlight.js?ver=15.2.34'
+    id='lscodehighlight-js-js'></script>
 
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
@@ -30,7 +36,7 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
+  <link rel="stylesheet" href="Sort.css">
   <!-- =======================================================
   * Template Name: Knight - v4.8.0
   * Template URL: https://bootstrapmade.com/knight-free-bootstrap-theme/
@@ -89,7 +95,7 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2><strong>Insertion Sort C++</strong> </h2>
+          <h1 id="heading"><b>Insertion Sort Python</b></h1><br>
           <ol>
             <li><a href="index.html">Home</a></li>
             <li>Insertion Sort</li>
@@ -105,153 +111,238 @@
 
         <div class="row gy-4">
 
-          <div id="node-329" class="node node-algorithm clearfix" about="/dsa/bubble-sort" typeof="sioc:Item foaf:Document">
+          <div id="node-329" class="node node-algorithm clearfix" about="/dsa/bubble-sort"
+            typeof="sioc:Item foaf:Document">
 
-  
+
             <span property="dc:title" content="Bubble Sort" class="rdf-meta element-hidden"></span>
-        
-        <div class="content">
-            <p id="definition"><strong>Insertion sort</strong> is a sorting algorithm</a> that places an unsorted element at its suitable place in each iteration.</p>
-      
-            <p>Insertion sort works similarly as we sort cards in our hand in a card game.</p>
-  
-            <p>We assume that the first card is already sorted then, we select an unsorted card. If the unsorted card is greater than the card in hand, it is placed on the right otherwise, to the left. In the same way, other unsorted cards are taken and put in their right place.</p>
-            
-            <p>A similar approach is used by insertion sort.</p>
-            
-            <hr><h2 id="working">Working of Insertion Sort</h2>
-            
-            <p>Suppose we need to sort the following array.</p>
-      
-            <figure><img alt="Insertion Sort Steps" height="85" src="assets/img/links images/insertion sort 1.png" style="border: 1px solid black;" title="Initial array" width="330"><figcaption style="border: 1px solid black;">Initial array</figcaption></figure><ol><li>The first element in the array is assumed to be sorted. Take the second element and store it separately in <code>key</code>.<br><br>
-              Compare <code>key</code> with the first element. If the first element is greater than <code>key</code>, then <var>key</var> is placed in front of the first element.
-          
-              <figure><img alt="Insertion Sort Steps" height="358" src="assets/img/links images/insertion sort 2.png" title="Insertion Sort Step 0" width="400"><figcaption>If the first element is greater than key, then key is placed in front of the first element.</figcaption></figure></li>
-            <li>Now, the first two elements are sorted.<br><br>
-              Take the third element and compare it with the elements on the left of it. Placed it just behind the element smaller than it. If there is no element smaller than it, then place it at the beginning of the array.
-              <figure><img alt="Insertion Sort Steps" height="440" src="assets/img/links images/insertion sort 3.png" title="Insertion Sort Step 1" width="400"><figcaption>Place 1 at the beginning</figcaption></figure></li>
-            <li>Similarly, place every unsorted element at its correct position.
-              <figure><img alt="Insertion Sort Steps" height="443" src="assets/img/links images/insertion sort 4.png" title="Insertion Sort Step 2" width="400"><figcaption>Place 4 behind 1</figcaption></figure><figure><img alt="Insertion Sort Steps" height="530" src="assets/img/links images/insertion sort 5.png" title="Insertion Sort Step 3" width="400"><figcaption>Place 3 behind 1 and the array is sorted</figcaption></figure></li>
-          </ol><hr><h2 id="algorithm">Insertion Sort Algorithm</h2>
+
+            <div class="content">
+              <p id="definition"><strong>Insertion sort</strong> is a sorting
+                <span class="text-primary">algorithm</span></a> that places an unsorted
+                element at its suitable place in each iteration.
+              </p>
+
+              <p>Insertion sort works similarly as we sort cards in our hand in a card game.</p>
+
+              <p>We assume that the first card is already sorted then, we select an unsorted card. If the unsorted card
+                is greater than the card in hand, it is placed on the right otherwise, to the left. In the same way,
+                other unsorted cards are taken and put in their right place.</p>
+
+              <p>A similar approach is used by insertion sort.</p>
+
+              <hr>
+              <h2 id="working">Working of Insertion Sort</h2>
+
+              <p>Suppose we need to sort the following array.</p>
+
+              <figure><img alt="Insertion Sort Steps" height="85" src="assets/img/links images/insertion sort 1.png"
+                  style="border: 1px solid black;" title="Initial array" width="330">
+                <figcaption style="border: 1px solid black;">Initial array</figcaption>
+              </figure>
+              <ol>
+                <li>The first element in the array is assumed to be sorted. Take the second element and store it
+                  separately in <code>key</code>.<br><br>
+                  Compare <code>key</code> with the first element. If the first element is greater than
+                  <code>key</code>, then <var>key</var> is placed in front of the first element.
+
+                  <figure><img alt="Insertion Sort Steps" height="358"
+                      src="assets/img/links images/insertion sort 2.png" title="Insertion Sort Step 0" width="400">
+                    <figcaption>If the first element is greater than key, then key is placed in front of the first
+                      element.</figcaption>
+                  </figure>
+                </li>
+                <li>Now, the first two elements are sorted.<br><br>
+                  Take the third element and compare it with the elements on the left of it. Placed it just behind the
+                  element smaller than it. If there is no element smaller than it, then place it at the beginning of the
+                  array.
+                  <figure><img alt="Insertion Sort Steps" height="440"
+                      src="assets/img/links images/insertion sort 3.png" title="Insertion Sort Step 1" width="400">
+                    <figcaption>Place 1 at the beginning</figcaption>
+                  </figure>
+                </li>
+                <li>Similarly, place every unsorted element at its correct position.
+                  <figure><img alt="Insertion Sort Steps" height="443"
+                      src="assets/img/links images/insertion sort 4.png" title="Insertion Sort Step 2" width="400">
+                    <figcaption>Place 4 behind 1</figcaption>
+                  </figure>
+                  <figure><img alt="Insertion Sort Steps" height="530"
+                      src="assets/img/links images/insertion sort 5.png" title="Insertion Sort Step 3" width="400">
+                    <figcaption>Place 3 behind 1 and the array is sorted</figcaption>
+                  </figure>
+                </li>
+              </ol>
+              <hr>
+              <h2 id="algorithm">Insertion Sort Algorithm</h2>
 
 
-      <div style="background: ghostwhite; 
+              <div style="background: #383B40; 
             font-size: 20px; 
           font-family: 'Courier New', Courier, monospace;
-          color: black;
+          color: #98C379;
             padding: 10px; 
             border: 1px solid black; 
             margin: 10px;">
-  
-      <pre>
+
+                <pre>
       <code>
-        insertionSort(array)
-    mark first element as sorted
-    for each unsorted element X
-      'extract' the element X
-      for j &lt;- lastSortedIndex down to 0
-        if current element j &gt; X
-          move sorted element to the right by 1
-      break loop and insert X here
-  end insertionSort
+    <span class="inter1">insertionSort(array)</span>
+    <span class="inter1">mark</span> first element as sorted
+    <span class="inter1">for</span> each unsorted element X
+      <span class="inter1">'</span>extract' the element X
+      <span class="inter1">for</span> j &lt;- lastSortedIndex down to 0
+        <span class="inter1">if</span> current element j &gt; X
+          <span class="inter1">move</span> sorted element to the right by 1
+      <span class="inter1">break</span> loop and insert X here
+    <span class="inter1">end</span> insertionSort
     </code></pre>
-      </div>
-      <hr><h2 id="code">Insertion Sort in C++</h2>
-            
-      <div class="code-editor code-editor--tabbed">
-        
-        <div style="background: ghostwhite; 
+              </div>
+              <hr>
+              <h2 id="code">Insertion Sort in Python</h2>
+
+              <div class="code-editor code-editor--tabbed">
+
+                <div style="background: #383B40; 
         font-size: 20px; 
         padding: 10px; 
+        color: lightgray;
         border: 1px solid lightgray; 
         margin: 10px;">
-        <div class="code-editor__area" id="cpp-code">
-          <pre class="exec">
+                  <div class="code-editor__area" id="cpp-code">
+                    <pre class="exec">
       <code>
-              # Insertion sort in Python
+        <span class="type1"># Insertion sort in Python</span>
 
-        def insertionSort(array):
+        <span class="type2">def</span> <span class="text-info">insertionSort</span>(<span class="inter1">array</span>):
         
-            for step in range(1, len(array)):
-                key = array[step]
+            <span class="type2">for</span> step <span class="type2">in</span> range(1, len(<span class="inter1">array</span>)):
+                key = <span class="inter1">array</span>[step]
                 j = step - 1
                 
-                # Compare key with each element on the left of it until an element smaller than it is found
-                # For descending order, change key<array[j] to key>array[j].        
-                while j >= 0 and key < array[j]:
-                    array[j + 1] = array[j]
+                <span class="type1"># Compare key with each element on the left of it until an element smaller than it is found</span>
+                <span class="type1"># For descending order, change key<array[j] to key>array[j].        </span>
+                <span class="type2">while</span> j >= 0 and key < <span class="inter1">array</span>[j]:
+                    <span class="inter1">array</span>[j + 1] = <span class="inter1">array</span>[j]
                     j = j - 1
                 
-                # Place key at after the element just smaller than it.
-                array[j + 1] = key
+                <span class="type1"># Place key at after the element just smaller than it.</span>
+                <span class="inter1">array</span>[j + 1] = key
         
         
-        data = [9, 5, 1, 4, 3]
+        data = [<span class="inter1">9, 5, 1, 4, 3</span>]
         insertionSort(data)
-        print('Sorted Array in Ascending Order:')
-        print(data)
+        <span class="type2">print</span>(<span class="inter2">'Sorted Array in Ascending Order:'</span>)
+        <span class="type2">print</span>(data)
 </code></pre>
-      </div>
-        </div>
-      </div>
-      <hr><h2 id="complexity">Insertion Sort Complexity</h2>
-  
-  <div class="table-responsive">
-    <table><tbody><tr><th><strong>Time Complexity</strong></th>
-          <td> </td>
-        </tr><tr><td>Best</td>
-          <td>O(n)</td>
-        </tr><tr><td>Worst</td>
-          <td>O(n<sup>2</sup>)</td>
-        </tr><tr><td>Average</td>
-          <td>O(n<sup>2</sup>)</td>
-        </tr><tr><th><strong>Space Complexity</strong></th>
-          <td>O(1)</td>
-        </tr><tr><th><strong>Stability</strong></th>
-          <td>Yes</td>
-        </tr></tbody></table></div>
-  
-        
+                  </div>
+                </div>
+              </div>
+              <hr>
+              <h2 id="complexity">Insertion Sort Complexity</h2>
 
-  <hr><p></p><div id="block-inject-1" class="block-inject block-inject-1">
-      
-      
-      
-      <style>
-      #div-gpt-ad-Programizcom37046 {display:none; width: 728px; height: 90px; }
-      #div-gpt-ad-Programizcom36796 {display: block;}
-      @media(min-width: 992px) { #div-gpt-ad-Programizcom37046 {display: block;} #div-gpt-ad-Programizcom36796 {display: none;}}
-      </style><div id="div-gpt-ad-Programizcom37046" style="margin: 32px 0;">
-      </div>
-      
-      <div id="div-gpt-ad-Programizcom36796" style="margin: 32px 0; min-height: 250px;">
-      </div>
-      </div><div class="clearfix"></div><p><strong>Time Complexities</strong></p>
-  
-  <ul><li><strong>Worst Case Complexity:</strong> <code>O(n<sup>2</sup>)</code><br>
-      Suppose, an array is in ascending order, and you want to sort it in descending order. In this case, worst case complexity occurs.<br><br>
-      Each element has to be compared with each of the other elements so, for every nth element, <code>(n-1)</code> number of comparisons are made.<br><br>
-      Thus, the total number of comparisons = <code>n*(n-1) ~ n<sup>2</sup></code></li>
-    <li><strong>Best Case Complexity:</strong> <code>O(n)</code><br>
-      When the array is already sorted, the outer loop runs for <code>n</code> number of times whereas the inner loop does not run at all. So, there are only <code>n</code> number of comparisons. Thus, complexity is linear.</li>
-    <li><strong>Average Case Complexity:</strong> <code>O(n<sup>2</sup>)</code><br>
-      It occurs when the elements of an array are in jumbled order (neither ascending nor descending).</li>
-  </ul><p><strong>Space Complexity</strong></p>
-  
-  <p>Space complexity is <code>O(1)</code> because an extra variable <code>key</code> is used.</p>
-  
-  <hr><h2 id="application">Insertion Sort Applications</h2>
-  
-  <p>The insertion sort is used when:</p>
-  
-  <ul><li>the array is has a small number of elements</li>
-    <li>there are only a few elements left to be sorted</li>
-    </ul>
-    </div>
-    </main>
-    
+              <div class="table-responsive">
+                <table>
+                  <tbody>
+                    <tr>
+                      <th><strong>Time Complexity</strong></th>
+                      <td> </td>
+                    </tr>
+                    <tr>
+                      <td>Best</td>
+                      <td>O(n)</td>
+                    </tr>
+                    <tr>
+                      <td>Worst</td>
+                      <td>O(n<sup>2</sup>)</td>
+                    </tr>
+                    <tr>
+                      <td>Average</td>
+                      <td>O(n<sup>2</sup>)</td>
+                    </tr>
+                    <tr>
+                      <th><strong>Space Complexity</strong></th>
+                      <td>O(1)</td>
+                    </tr>
+                    <tr>
+                      <th><strong>Stability</strong></th>
+                      <td>Yes</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+
+              <hr>
+              <p></p>
+              <div id="block-inject-1" class="block-inject block-inject-1">
+
+
+
+                <style>
+                  #div-gpt-ad-Programizcom37046 {
+                    display: none;
+                    width: 728px;
+                    height: 90px;
+                  }
+
+                  #div-gpt-ad-Programizcom36796 {
+                    display: block;
+                  }
+
+                  @media(min-width: 992px) {
+                    #div-gpt-ad-Programizcom37046 {
+                      display: block;
+                    }
+
+                    #div-gpt-ad-Programizcom36796 {
+                      display: none;
+                    }
+                  }
+                </style>
+                <div id="div-gpt-ad-Programizcom37046" style="margin: 32px 0;">
+                </div>
+
+                <div id="div-gpt-ad-Programizcom36796" style="margin: 32px 0; min-height: 250px;">
+                </div>
+              </div>
+              <div class="clearfix"></div>
+              <p><strong>Time Complexities</strong></p>
+
+              <ul>
+                <li><strong>Worst Case Complexity:</strong> <code>O(n<sup>2</sup>)</code><br>
+                  Suppose, an array is in ascending order, and you want to sort it in descending order. In this case,
+                  worst case complexity occurs.<br><br>
+                  Each element has to be compared with each of the other elements so, for every nth element,
+                  <code>(n-1)</code> number of comparisons are made.<br><br>
+                  Thus, the total number of comparisons = <code>n*(n-1) ~ n<sup>2</sup></code>
+                </li>
+                <li><strong>Best Case Complexity:</strong> <code>O(n)</code><br>
+                  When the array is already sorted, the outer loop runs for <code>n</code> number of times whereas the
+                  inner loop does not run at all. So, there are only <code>n</code> number of comparisons. Thus,
+                  complexity is linear.</li>
+                <li><strong>Average Case Complexity:</strong> <code>O(n<sup>2</sup>)</code><br>
+                  It occurs when the elements of an array are in jumbled order (neither ascending nor descending).</li>
+              </ul>
+              <p><strong>Space Complexity</strong></p>
+
+              <p>Space complexity is <code>O(1)</code> because an extra variable <code>key</code> is used.</p>
+
+              <hr>
+              <h2 id="application">Insertion Sort Applications</h2>
+
+              <p>The insertion sort is used when:</p>
+
+              <ul>
+                <li>the array is has a small number of elements</li>
+                <li>there are only a few elements left to be sorted</li>
+              </ul>
+            </div>
+  </main>
+
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/aos/aos.js"></script>
@@ -264,7 +355,7 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
-  
+
 
 </body>
 
