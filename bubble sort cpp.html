@@ -10,7 +10,7 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/favicoon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
@@ -26,6 +26,7 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
+ 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
   <link rel="stylesheet" href="Sort.css">
@@ -49,11 +50,12 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto " href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
-          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+          <li><a class="nav-link scrollto " href="index.html">Home</a></li>
+          <li><a class="nav-link scrollto " href="#definition">Working</a></li>
+          <li><a class="nav-link scrollto" href="#algorithm">Algorithm</a></li>
+          <li><a class="nav-link scrollto" href="#code">Code</a></li>
+          <li><a class="nav-link scrollto " href="#complexity">complexity</a></li>
+          <!-- <li><a class="nav-link scrollto" href="#team">Team</a></li>
           <li><a class="nav-link scrollto" href="#pricing">Pricing</a></li>
           <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
@@ -71,8 +73,8 @@
               <li><a href="#">Drop Down 3</a></li>
               <li><a href="#">Drop Down 4</a></li>
             </ul>
-          </li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          </li> -->
+          <!-- <li><a class="nav-link scrollto" href="#contact">Contact</a></li> -->
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -131,13 +133,25 @@
                 <li>If the first element is greater than the second element, they are swapped.</li>
                 <li>Now, compare the second and the third elements. Swap them if they are not in order.</li>
                 <li>The above process goes on until the last element.
+
+                  
+              <div style="display: flex;justify-content: center;align-items: center;">
+                <figure>
+                  <img alt="Compare two adjacent elements and swap them if the first element is greater than the next element" src="assets\img\links images\bubble sort 1.png"
+                    style="border: 1px solid black;" title="Initial array" width="650px" height="400px">
+                  <div style="margin-left: 0px;border: 1px solid black;background-color: ghostwhite;display: flex;justify-content: center;align-items: center;width: 650px;padding:3px 5px ;height: 50px;">
+                    <div>Compare the Adjacent Elements</div>
+                  </div>
+                </figure>
+              </div>
+<!-- 
                   <figure><img
                       alt="Compare two adjacent elements and swap them if the first element is greater than the next element"
                       height="502.9"
-                      src="/D:\Study Material\Software Engineering Project\Templates\Knight\Knight\assets\img\links images/bubble sort 1.png"
+                      src="assets\img\links images\bubble sort 1.png"
                       title="Bubble Sort step 0" width="575">
                     <figcaption>Compare the Adjacent Elements</figcaption>
-                  </figure>
+                  </figure> -->
                 </li>
               </ol>
               <p><strong>2. Remaining Iteration</strong></p>
@@ -146,26 +160,56 @@
 
               <p>After each iteration, the largest element among the unsorted elements is placed at the end.</p>
 
-              <figure><img alt="Continue the swapping and put the largest element among the unsorted list at the end"
+              <div style="display: flex;justify-content: center;align-items: center; margin-left: 30px;">
+                <figure>
+                  <img alt="Continue the swapping and put the largest element among the unsorted list at the end" src="assets\img\links images\bubble sort 2.png"
+                    style="border: 1px solid black;" title="Initial array" width="650px" height="400px">
+                  <div style="border: 1px solid black;background-color: ghostwhite;display: flex;justify-content: center;align-items: center;width: 650px;padding:3px 5px ;height: 50px;">
+                    <div>Put the largest element at the end</div>
+                  </div>
+                </figure>
+              </div>
+
+              <!-- <figure><img alt="Continue the swapping and put the largest element among the unsorted list at the end"
                   height="414"
-                  src="/D:\Study Material\Software Engineering Project\Templates\Knight\Knight\assets\img\links images/bubble sort 2.png"
+                  src="assets\img\links images\bubble sort 2.png"
                   title="Bubble Sort step 1" width="575">
                 <figcaption>Put the largest element at the end</figcaption>
-              </figure>
+              </figure> -->
               <p>In each iteration, the comparison takes place up to the last unsorted element.</p>
 
-              <figure><img alt="Swapping occurs only if the first element is greater than the next element" height="325"
-                  src="/D:\Study Material\Software Engineering Project\Templates\Knight\Knight\assets\img\links images/bubble sort 3.png"
+              <div style="display: flex;justify-content: center;align-items: center; margin-left: 30px;">
+                <figure>
+                  <img alt="Swapping occurs only if the first element is greater than the next element" src="assets\img\links images\bubble sort 3.png"
+                    style="border: 1px solid black;" title="Initial array" width="650px" height="400px">
+                  <div style="border: 1px solid black;background-color: ghostwhite;display: flex;justify-content: center;align-items: center;width: 650px;padding:3px 5px ;height: 50px;">
+                    <div>Compare the adjacent elements</div>
+                  </div>
+                </figure>
+              </div>
+
+              <!-- <figure><img alt="Swapping occurs only if the first element is greater than the next element" height="325"
+                  src="assets\img\links images\bubble sort 3.png"
                   title="Bubble Sort step 2" width="575">
                 <figcaption>Compare the adjacent elements</figcaption>
-              </figure>
+              </figure> -->
               <p>The array is sorted when all the unsorted elements are placed at their correct positions.</p>
 
-              <figure><img alt="The array is sorted if all the elements are kept in the right order." height="237"
-                  src="/D:\Study Material\Software Engineering Project\Templates\Knight\Knight\assets\img\links images/bubble sort 4.png"
+              <div style="display: flex;justify-content: center;align-items: center; margin-left: 30px;">
+                <figure>
+                  <img alt="The array is sorted if all the elements are kept in the right order." src="assets\img\links images\bubble sort 4.png"
+                    style="border: 1px solid black;" title="Initial array" width="650px" height="300px">
+                  <div style="border: 1px solid black;background-color: ghostwhite;display: flex;justify-content: center;align-items: center;width: 650px;padding:3px 5px ;height: 50px;">
+                    <div>The array is sorted if all elements are kept in the right order</div>
+                  </div>
+                </figure>
+              </div>
+
+              <!-- <figure><img alt="The array is sorted if all the elements are kept in the right order." height="237"
+                  src="assets\img\links images\bubble sort 4.png"
                   title="Bubble Sort step 3" width="575">
                 <figcaption>The array is sorted if all elements are kept in the right order</figcaption>
-              </figure>
+              </figure> -->
               <hr>
               <h2 id="algorithm">Bubble Sort Algorithm</h2>
               <div style="background: #383B40; 

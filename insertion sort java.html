@@ -55,13 +55,16 @@
         <a href="index.html"><img src="assets/img/favicoon.png" alt="" class="img-fluid"></a>
       </div>
 
+      
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto " href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
-          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+          <li><a class="nav-link scrollto " href="index.html">Home</a></li>
+          <li><a class="nav-link scrollto " href="#definition">Working</a></li>
+
+          <li><a class="nav-link scrollto" href="#algorithm">Algorithm</a></li>
+          <li><a class="nav-link scrollto" href="#code">Code</a></li>
+          <li><a class="nav-link scrollto " href="#complexity">complexity</a></li>
+          <!-- <li><a class="nav-link scrollto" href="#team">Team</a></li>
           <li><a class="nav-link scrollto" href="#pricing">Pricing</a></li>
           <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
@@ -79,8 +82,8 @@
               <li><a href="#">Drop Down 3</a></li>
               <li><a href="#">Drop Down 4</a></li>
             </ul>
-          </li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          </li> -->
+          <!-- <li><a class="nav-link scrollto" href="#contact">Contact</a></li> -->
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -136,40 +139,94 @@
 
               <p>Suppose we need to sort the following array.</p>
 
-              <figure><img alt="Insertion Sort Steps" height="85" src="assets/img/links images/insertion sort 1.png"
+              <div style="display: flex;justify-content: center;align-items: center; margin-left: 30px;">
+                <figure>
+                  <img alt="Insertion Sort Steps" src="assets\img\links images\insertion sort 1.png"
+                    style="border: 1px solid black;" title="Initial array" width="650px" height="150px">
+                  <div style="border: 1px solid black;background-color: ghostwhite;display: flex;justify-content: center;align-items: center;width: 650px;padding:3px 5px ;height: 50px;">
+                    <div>Initial array</div>
+                  </div>
+                </figure>
+              </div>
+
+              <!-- <figure><img alt="Insertion Sort Steps" height="85" src="assets/img/links images/insertion sort 1.png"
                   style="border: 1px solid black;" title="Initial array" width="330">
                 <figcaption style="border: 1px solid black;">Initial array</figcaption>
-              </figure>
+              </figure> -->
               <ol>
                 <li>The first element in the array is assumed to be sorted. Take the second element and store it
                   separately in <code>key</code>.<br><br>
                   Compare <code>key</code> with the first element. If the first element is greater than
                   <code>key</code>, then <var>key</var> is placed in front of the first element.
 
-                  <figure><img alt="Insertion Sort Steps" height="358"
+                  <div style="display: flex;justify-content: center;align-items: center; margin-left: 0px;">
+                    <figure>
+                      <img alt="Insertion Sort Steps" src="assets\img\links images\insertion sort 2.png"
+                        style="border: 1px solid black;" title="Insertion Sort Step 0" width="650px" height="400px">
+                      <div style="border: 1px solid black;background-color: ghostwhite;display: flex;justify-content: center;align-items: center;width: 650px;padding:3px 5px ;height: 50px;">
+                        <div>If the first element is greater than key, then key is placed in front of the first
+                          element.</div>
+                      </div>
+                    </figure>
+                  </div>
+
+                  <!-- <figure><img alt="Insertion Sort Steps" height="358"
                       src="assets/img/links images/insertion sort 2.png" title="Insertion Sort Step 0" width="400">
                     <figcaption>If the first element is greater than key, then key is placed in front of the first
                       element.</figcaption>
-                  </figure>
+                  </figure> -->
                 </li>
                 <li>Now, the first two elements are sorted.<br><br>
                   Take the third element and compare it with the elements on the left of it. Placed it just behind the
                   element smaller than it. If there is no element smaller than it, then place it at the beginning of the
                   array.
-                  <figure><img alt="Insertion Sort Steps" height="440"
+
+                  <div style="display: flex;justify-content: center;align-items: center; margin-left: 0px;">
+                    <figure>
+                      <img alt="Insertion Sort Steps" src="assets\img\links images\insertion sort 3.png"
+                        style="border: 1px solid black;" title="Insertion Sort Step 1" width="650px" height="400px">
+                      <div style="border: 1px solid black;background-color: ghostwhite;display: flex;justify-content: center;align-items: center;width: 650px;padding:3px 5px ;height: 50px;">
+                        <div>Place 1 at the beginning</div>
+                      </div>
+                    </figure>
+                  </div>
+
+                  <!-- <figure><img alt="Insertion Sort Steps" height="440"
                       src="assets/img/links images/insertion sort 3.png" title="Insertion Sort Step 1" width="400">
                     <figcaption>Place 1 at the beginning</figcaption>
-                  </figure>
+                  </figure> -->
                 </li>
                 <li>Similarly, place every unsorted element at its correct position.
-                  <figure><img alt="Insertion Sort Steps" height="443"
+
+                  <div style="display: flex;justify-content: center;align-items: center; margin-left: 0px;">
+                    <figure>
+                      <img alt="Insertion Sort Steps" src="assets\img\links images\insertion sort 4.png"
+                        style="border: 1px solid black;" title="Insertion Sort Step 2" width="650px" height="400px">
+                      <div style="border: 1px solid black;background-color: ghostwhite;display: flex;justify-content: center;align-items: center;width: 650px;padding:3px 5px ;height: 50px;">
+                        <div>Place 4 behind 1</div>
+                      </div>
+                    </figure>
+                  </div>
+
+                  <!-- <figure><img alt="Insertion Sort Steps" height="443"
                       src="assets/img/links images/insertion sort 4.png" title="Insertion Sort Step 2" width="400">
                     <figcaption>Place 4 behind 1</figcaption>
-                  </figure>
-                  <figure><img alt="Insertion Sort Steps" height="530"
+                  </figure> -->
+
+                  <div style="display: flex;justify-content: center;align-items: center; margin-left: 0px;">
+                    <figure>
+                      <img alt="Insertion Sort Steps" src="assets\img\links images\insertion sort 5.png"
+                        style="border: 1px solid black;" title="Insertion Sort Step 2" width="650px" height="400px">
+                      <div style="border: 1px solid black;background-color: ghostwhite;display: flex;justify-content: center;align-items: center;width: 650px;padding:3px 5px ;height: 50px;">
+                        <div>Place 3 behind 1 and the array is sorted</div>
+                      </div>
+                    </figure>
+                  </div>
+
+                  <!-- <figure><img alt="Insertion Sort Steps" height="530"
                       src="assets/img/links images/insertion sort 5.png" title="Insertion Sort Step 3" width="400">
                     <figcaption>Place 3 behind 1 and the array is sorted</figcaption>
-                  </figure>
+                  </figure> -->
                 </li>
               </ol>
               <hr>

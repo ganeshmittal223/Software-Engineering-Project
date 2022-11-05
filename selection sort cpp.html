@@ -55,13 +55,16 @@
         <a href="index.html"><img src="assets/img/favicoon.png" alt="" class="img-fluid"></a>
       </div>
 
+      
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto " href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
-          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+          <li><a class="nav-link scrollto " href="index.html">Home</a></li>
+          <li><a class="nav-link scrollto " href="#definition">Working</a></li>
+
+          <li><a class="nav-link scrollto" href="#algorithm">Algorithm</a></li>
+          <li><a class="nav-link scrollto" href="#code">Code</a></li>
+          <li><a class="nav-link scrollto " href="#complexity">complexity</a></li>
+          <!-- <li><a class="nav-link scrollto" href="#team">Team</a></li>
           <li><a class="nav-link scrollto" href="#pricing">Pricing</a></li>
           <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
@@ -79,8 +82,8 @@
               <li><a href="#">Drop Down 3</a></li>
               <li><a href="#">Drop Down 4</a></li>
             </ul>
-          </li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          </li> -->
+          <!-- <li><a class="nav-link scrollto" href="#contact">Contact</a></li> -->
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -131,45 +134,121 @@
               <ol>
                 <li>Set the first element as <code>minimum</code>.
 
-                  <figure><img alt="Selection Sort Steps" height="85" src="assets/img/links images/selection sort 1.png"
+                  <div style="display: flex;justify-content: center;align-items: center; margin-left: 30px;">
+                    <figure>
+                      <img alt="Selection Sort Steps" src="assets\img\links images\selection sort 1.png"
+                        style="border: 1px solid black;" title="Initial array" width="650px" height="150px">
+                      <div style="border: 1px solid black;background-color: ghostwhite;display: flex;justify-content: center;align-items: center;width: 650px;padding:3px 5px ;height: 50px;">
+                        <div>Select first element as minimum</div>
+                      </div>
+                    </figure>
+                  </div>
+
+                  <!-- <figure><img alt="Selection Sort Steps" height="85" src="assets/img/links images/selection sort 1.png"
                       title="New Array Initialized" width="330">
                     <figcaption>Select first element as minimum</figcaption>
-                  </figure>
+                  </figure> -->
                 </li>
                 <li>Compare <code>minimum</code> with the second element. If the second element is smaller than
                   <code>minimum</code>, assign the second element as <code>minimum</code>.<br><br>
                   Compare <code>minimum</code> with the third element. Again, if the third element is smaller, then
                   assign <code>minimum</code> to the third element otherwise do nothing. The process goes on until the
                   last element.
-                  <figure><img alt="Selection Sort Steps" height="290"
+
+                  <div style="display: flex;justify-content: center;align-items: center; margin-left: 30px;">
+                    <figure>
+                      <img alt="Selection Sort Steps" src="assets\img\links images\selection sort 2.png"
+                        style="border: 1px solid black;" title="Initial array" width="650px" height="400px">
+                      <div style="border: 1px solid black;background-color: ghostwhite;display: flex;justify-content: center;align-items: center;width: 650px;padding:3px 5px ;height: 50px;">
+                        <div>Compare minimum with the remaining elements</div>
+                      </div>
+                    </figure>
+                  </div>
+
+                  <!-- <figure><img alt="Selection Sort Steps" height="290"
                       src="assets/img/links images/selection sort 2.png" title="comparison" width="330">
                     <figcaption>Compare minimum with the remaining elements</figcaption>
-                  </figure>
+                  </figure> -->
                 </li>
                 <li>After each iteration, <code>minimum</code> is placed in the front of the unsorted list.
-                  <figure><img alt="Selection Sort Steps" height="122"
+
+                  <div style="display: flex;justify-content: center;align-items: center; margin-left: 30px;">
+                    <figure>
+                      <img alt="Selection Sort Steps" src="assets\img\links images\selection sort 3.png"
+                        style="border: 1px solid black;" title="Initial array" width="650px" height="200px">
+                      <div style="border: 1px solid black;background-color: ghostwhite;display: flex;justify-content: center;align-items: center;width: 650px;padding:3px 5px ;height: 50px;">
+                        <div>Swap the first with minimum</div>
+                      </div>
+                    </figure>
+                  </div>
+
+                  <!-- <figure><img alt="Selection Sort Steps" height="122"
                       src="assets/img/links images/selection sort 3.png" title="swapping" width="330">
                     <figcaption>Swap the first with minimum</figcaption>
-                  </figure>
+                  </figure> -->
                 </li>
                 <li>For each iteration, indexing starts from the first unsorted element. Step 1 to 3 are repeated until
                   all the elements are placed at their correct positions.
-                  <figure><img alt="Selection Sort Steps" height="506"
+
+                  <div style="display: flex;justify-content: center;align-items: center; margin-left: 30px;">
+                    <figure>
+                      <img alt="Selection Sort Steps" src="assets\img\links images\selection sort 4.png"
+                        style="border: 1px solid black;" title="Initial array" width="650px" height="400px">
+                      <div style="border: 1px solid black;background-color: ghostwhite;display: flex;justify-content: center;align-items: center;width: 650px;padding:3px 5px ;height: 50px;">
+                        <div>The first iteration</div>
+                      </div>
+                    </figure>
+                  </div>
+
+                  <!-- <figure><img alt="Selection Sort Steps" height="506"
                       src="assets/img/links images/selection sort 4.png" title="Selection Sort Step 0" width="440">
                     <figcaption>The first iteration</figcaption>
-                  </figure>
-                  <figure><img alt="Selection sort steps" height="422"
+                  </figure> -->
+
+                  <div style="display: flex;justify-content: center;align-items: center; margin-left: 30px;">
+                    <figure>
+                      <img alt="Selection Sort Steps" src="assets\img\links images\selection sort 5.png"
+                        style="border: 1px solid black;" title="Initial array" width="650px" height="400px">
+                      <div style="border: 1px solid black;background-color: ghostwhite;display: flex;justify-content: center;align-items: center;width: 650px;padding:3px 5px ;height: 50px;">
+                        <div>The second iteration</div>
+                      </div>
+                    </figure>
+                  </div>
+
+                  <!-- <figure><img alt="Selection sort steps" height="422"
                       src="assets/img/links images/selection sort 5.png" title="Selection sort steps 1" width="440">
                     <figcaption>The second iteration</figcaption>
-                  </figure>
+                  </figure> -->
+
+                  <div style="display: flex;justify-content: center;align-items: center; margin-left: 30px;">
+                    <figure>
+                      <img alt="Selection Sort Steps" src="assets\img\links images\selection sort 6.png"
+                        style="border: 1px solid black;" title="Initial array" width="650px" height="400px">
+                      <div style="border: 1px solid black;background-color: ghostwhite;display: flex;justify-content: center;align-items: center;width: 650px;padding:3px 5px ;height: 50px;">
+                        <div>The third iteration</div>
+                      </div>
+                    </figure>
+                  </div>
+<!-- 
                   <figure><img alt="Selection sort steps" height="343"
                       src="assets/img/links images/selection sort 6.png" title="Selection sort steps 2" width="440">
                     <figcaption>The third iteration</figcaption>
-                  </figure>
-                  <figure><img alt="Selection sort steps" height="260"
+                  </figure> -->
+
+                  <div style="display: flex;justify-content: center;align-items: center; margin-left: 30px;">
+                    <figure>
+                      <img alt="Selection Sort Steps" src="assets\img\links images\selection sort 7.png"
+                        style="border: 1px solid black;" title="Initial array" width="650px" height="400px">
+                      <div style="border: 1px solid black;background-color: ghostwhite;display: flex;justify-content: center;align-items: center;width: 650px;padding:3px 5px ;height: 50px;">
+                        <div>The fourth iteration</div>
+                      </div>
+                    </figure>
+                  </div>
+
+                  <!-- <figure><img alt="Selection sort steps" height="260"
                       src="assets/img/links images/selection sort 7.png" title="Selection sort steps 3" width="440">
                     <figcaption>The fourth iteration</figcaption>
-                  </figure>
+                  </figure> -->
                 </li>
               </ol>
               <hr>
