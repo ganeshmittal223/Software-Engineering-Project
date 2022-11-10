@@ -69,55 +69,73 @@
 
       </div>
     </header>
-    <section style="margin-top: 2vw;">
+    <section style="margin-top: 0vw;">
       <p class="head"><b>Comparision: <b id="comp"></b></b></p>
       <p class="head"><b>Swap: <b id="swap"></b></b></p>
     </section>
     <section class="data-container"></section>
+    <!-- <div>
+      <div id="buttons">
+        <input id="array" type="text" placeholder="Enter array seperated by space" size="30">
+        <button id="submit" class="btn-primary " onclick="submit()">Submit</button>
+        <button class="btn-default" onclick="bubbleSort()">Bubble Sort</button>
+        <button class="btn-default" onclick="stop = true" style="margin-left:40px">Stop</button>
+        <button class="btn-default" onclick="stop = false,bubbleSort()">Resume</button>
+        <button class="btn-default" onclick="reset()">Reset</button>
+        <button class="btn-deafault btn-danger" onClick="window.location.reload();">Clear</button>
+      </div>
+      <section class="align-items-center" style="display:flex;justify-content:center;align-items:center;padding: 0;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+          class="bi bi-skip-start-circle" id="previous" viewBox="0 0 16 16">
+          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+          <path
+            d="M10.229 5.055a.5.5 0 0 0-.52.038L7 7.028V5.5a.5.5 0 0 0-1 0v5a.5.5 0 0 0 1 0V8.972l2.71 1.935a.5.5 0 0 0 .79-.407v-5a.5.5 0 0 0-.271-.445z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-play-circle"
+          id="play" viewBox="0 0 16 16">
+          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+          <path
+            d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z" />
+        </svg>
 
-    <section class="align-items-center" style="display:flex;justify-content:center;align-items:center;padding: 0;">
-      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-skip-start-circle"
-        id="previous" viewBox="0 0 16 16">
-        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-        <path
-          d="M10.229 5.055a.5.5 0 0 0-.52.038L7 7.028V5.5a.5.5 0 0 0-1 0v5a.5.5 0 0 0 1 0V8.972l2.71 1.935a.5.5 0 0 0 .79-.407v-5a.5.5 0 0 0-.271-.445z" />
-      </svg>
-      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-play-circle"
-        id="play" viewBox="0 0 16 16">
-        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-        <path
-          d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z" />
-      </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-pause-circle"
+          id="pause" viewBox="0 0 16 16">
+          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+          <path
+            d="M5 6.25a1.25 1.25 0 1 1 2.5 0v3.5a1.25 1.25 0 1 1-2.5 0v-3.5zm3.5 0a1.25 1.25 0 1 1 2.5 0v3.5a1.25 1.25 0 1 1-2.5 0v-3.5z" />
+        </svg>
 
-      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-pause-circle"
-        id="pause" viewBox="0 0 16 16">
-        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-        <path
-          d="M5 6.25a1.25 1.25 0 1 1 2.5 0v3.5a1.25 1.25 0 1 1-2.5 0v-3.5zm3.5 0a1.25 1.25 0 1 1 2.5 0v3.5a1.25 1.25 0 1 1-2.5 0v-3.5z" />
-      </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-skip-end-circle"
+          id="next" viewBox="0 0 16 16">
+          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+          <path
+            d="M6.271 5.055a.5.5 0 0 1 .52.038L9.5 7.028V5.5a.5.5 0 0 1 1 0v5a.5.5 0 0 1-1 0V8.972l-2.71 1.935A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z" />
+        </svg>
+        <span id="speed">Speed
+          <input id="speed_input" type="range" min="20" max="300" stepDown=10 value=60>
+        </span>
+      </section> -->
 
-      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-skip-end-circle"
-        id="next" viewBox="0 0 16 16">
-        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-        <path
-          d="M6.271 5.055a.5.5 0 0 1 .52.038L9.5 7.028V5.5a.5.5 0 0 1 1 0v5a.5.5 0 0 1-1 0V8.972l-2.71 1.935A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z" />
-      </svg>
-      <span id="speed">Speed
-        <input id="speed_input" type="range" min="20" max="300" stepDown=10 value=60>
-      </span>
-    </section>
+    <input id="array" type="text" placeholder="Enter array seperated by space">
+    <button id="submit" class="btn-primary " onclick="submit()">Submit</button>
+    <span id="speed">Speed
+      <input id="speed_input" type="range" min="300" max="1500" stepDown=100 value=900>
+    </span>
+    <button class="btn-default" onclick="setmax()" style="margin-left:40px">Stop</button>
+    <button class="btn-default" onclick="setzero(), bubblesort()">Resume</button>
+    <!-- old one below -->
     <section style="padding: 0; padding-bottom: 2%;"> <button class="btn1" onclick="generate()" id="btn1">Generate
         Array</button>
       <button class="btn4" onclick="reset()" id="btn4">Reset</button>
     </section>
-    <secion class="sort">
+    <section class="sort">
       <br><br>
       <button class="btn2" onclick="selectionsort(),dis()" id="btn2">Selection Sort</button>
       <br><br>
       <button class="btn3" onclick="bubblesort(),dis()" id="btn3">Bubble Sort</button>
       <br><br>
       <button class="btn5" onclick="insertionsort(),dis()" id="btn5">Insertion Sort</button>
-    </secion>
+    </section>
   </div>
   <script src="main.js"></script>
 </body>
