@@ -1,6 +1,6 @@
 let count = 0;
 let infinity = 0;
-let i = 0, j = 0;
+var I = 0, J = 0;
 let speed = document.querySelector("#speed_input");
 console.log(speed.value)
 let array2;
@@ -9,10 +9,23 @@ function setmax() {
   infinity = 10000000;
   // infinity = 3000;
 }
-
+function reset() {
+  window.location.reload();
+}
+let bubble1 = false, selection1 = false, insertion1 = false, gen = false;
 function setzero() {
   infinity = 0;
-  bubblesort(i, j);
+  console.log(I);
+  console.log(J);
+  console.log(comp);
+  if (bubble1 == true)
+    bubblesort();
+  else if (selection1 == true) {
+    selectionsort();
+  }
+  else if (insertion1 == true) {
+    insertionsort();
+  }
 }
 const container = document.querySelector(".data-container");
 var comp = 0;
@@ -39,9 +52,17 @@ function submit() {
   console.log(array2.length);
   console.log(count);
 
-  rgenerate();
+  if (array2.length == 0) {
+    reset();
+  }
+  else
+    rgenerate();
 }
 function generate() {
+  if (gen == true) {
+    reset();
+  }
+  gen = true;
   for (let i = 0; i < 20; i++) {
     let varr = Math.floor(Math.random() * 100) % 100 + 1;
     const val = varr;
@@ -58,6 +79,10 @@ function generate() {
 }
 
 function rgenerate() {
+  if (gen == true) {
+    reset();
+  }
+  gen = true;
   for (let i = 0; i < array2.length; i++) {
     // let varr = Math.floor(Math.random() * 100) % 100 + 1;
     // console.log(varr);
@@ -75,9 +100,6 @@ function rgenerate() {
 }
 
 // 1 2 3 34 6 6 4 3 2 3 2 33 3 34 34 34  45   45 45 4   34 33 32 
-function reset() {
-  window.location.reload();
-}
 function swap(val1, val2) {
   return new Promise((resolve) => {
     var temp = val1.style.transform;
@@ -90,17 +112,26 @@ function swap(val1, val2) {
         setTimeout(() => {
           container.insertBefore(val2, val1);
           resolve();
-        }, 1550 - speed.value + infinity);
+        }, 1550 - speed.value);
       });
   });
 
 }
 
-async function bubblesort(i = 0, j = 0) {
-  var bars = document.querySelectorAll(".bar");
-  const size = bars.length;
-  for (i = 0; i < size; i++) {
-    for (j = 0; j < size - i - 1; j++) {
+var bars, size;
+function bubble() {
+  bars = document.querySelectorAll(".bar");
+  // const size = bars.length;
+  size = bars.length;
+  bubblesort()
+}
+async function bubblesort() {
+  if (gen == false) {
+    reset();
+  }
+  bubble1 = true;
+  for (let i = I; i < size; i++) {
+    for (let j = J; j < size - i - 1; j++) {
       bars[j].style.backgroundColor = "red";
       bars[j + 1].style.backgroundColor = "red";
       await new Promise((resolve) => { setTimeout(() => { resolve() }, 1550 - speed.value + infinity) });
@@ -113,21 +144,28 @@ async function bubblesort(i = 0, j = 0) {
         bars = document.querySelectorAll(".bar");
 
       }
-
       bars[j].style.backgroundColor = "  rgb(24, 190, 255)";
       bars[j + 1].style.backgroundColor = "  rgb(24, 190, 255)";
-
+      J = j;
     }
+    console.log(I);
+    console.log(J);
+    J = 0;
     bars[size - i - 1].style.backgroundColor = "green";
+    I = i;
   }
 }
 
 
 async function selectionsort() {
+  if (gen == false) {
+    reset();
+  }
   let bars = document.querySelectorAll(".bar");
   const size = bars.length;
   var min_ind = 0;
-  for (let i = 0; i < size; i++) {
+  selection1 = true;
+  for (let i = I; i < size; i++) {
     min_ind = i;
     //bars[i].style.backgroundColor = "darkblue";
     for (let j = i + 1; j < size; j++) {
@@ -167,21 +205,25 @@ async function selectionsort() {
 
     bars[min_ind].style.backgroundColor = "  rgb(24, 190, 255)";
     bars[i].style.backgroundColor = "green";
-
+    I = i;
   }
 }
 
 async function insertionsort() {
+  if (gen == false) {
+    reset();
+  }
   let bars = document.querySelectorAll(".bar");
   const size = bars.length;
+  insertion1 = true;
   bars[0].style.backgroundColor = " rgb(49, 226, 13)";
-  for (let i = 1; i < size; i++) {
+  for (let i = I + 1; i < size; i++) {
     var j = i - 1;
     var key = parseInt(bars[i].childNodes[0].innerHTML);
     var barheight = bars[i].style.height;
     bars[i].style.backgroundColor = "red";
     await new Promise((resolve) => {
-      setTimeout(() => resolve(), 1550 - speed.value + infinity)
+      setTimeout(() => resolve(), 1550 - speed.value)
     });
     while (j >= 0 && parseInt(bars[j].childNodes[0].innerHTML) > key) {
       sw++;
@@ -193,7 +235,7 @@ async function insertionsort() {
       bars[j + 1].childNodes[0].innerHTML = bars[j].childNodes[0].innerHTML;
       j--;
       await new Promise((resolve) => {
-        setTimeout(() => resolve(), 1550 - speed.value + infinity)
+        setTimeout(() => resolve(), 1550 - speed.value)
       });
       for (var k = i; k >= 0; k--) {
         bars[k].style.backgroundColor = " rgb(49, 226, 13)";
@@ -209,7 +251,7 @@ async function insertionsort() {
     });
 
     bars[i].style.backgroundColor = " rgb(49, 226, 13)";
-
+    I = i;
   }
 }
 function dis() {

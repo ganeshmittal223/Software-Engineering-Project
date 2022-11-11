@@ -121,8 +121,8 @@
     <span id="speed">Speed
       <input id="speed_input" type="range" min="300" max="1500" stepDown=100 value=900>
     </span>
-    <button class="btn-default" onclick="setmax()" style="margin-left:40px">Stop</button>
-    <button class="btn-default" onclick="setzero(), bubblesort()">Resume</button>
+    <button class="btn-default" onclick="setmax()" style="margin-left:40px">Stop Next Iteration</button>
+    <button class="btn-default" onclick="setzero()">Start Over</button>
     <!-- old one below -->
     <section style="padding: 0; padding-bottom: 2%;"> <button class="btn1" onclick="generate()" id="btn1">Generate
         Array</button>
@@ -132,7 +132,7 @@
       <br><br>
       <button class="btn2" onclick="selectionsort(),dis()" id="btn2">Selection Sort</button>
       <br><br>
-      <button class="btn3" onclick="bubblesort(),dis()" id="btn3">Bubble Sort</button>
+      <button class="btn3" onclick="bubble(),dis()" id="btn3">Bubble Sort</button>
       <br><br>
       <button class="btn5" onclick="insertionsort(),dis()" id="btn5">Insertion Sort</button>
     </section>
