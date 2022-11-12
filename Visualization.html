@@ -26,7 +26,7 @@
 
 <body>
   <div>
-    <header id="header" class="d-flex align-items-center">
+    <header id="header1" class="d-flex align-items-center">
       <div class="container d-flex align-items-center justify-content-between">
 
         <div class="logo">
@@ -70,8 +70,8 @@
       </div>
     </header>
     <section style="margin-top: 0vw;">
-      <p class="head"><b>Comparision: <b id="comp"></b></b></p>
-      <p class="head"><b>Swap: <b id="swap"></b></b></p>
+      <p class="head" style="color: snow;"><b>Comparison:<b id="comp" style="color: white;"></b></b></p>
+      <p class="head" style="color: white;"><b>Swap: <b id="swap" style="color: white;"></b></b></p>
     </section>
     <section class="data-container"></section>
     <!-- <div>
@@ -116,17 +116,21 @@
         </span>
       </section> -->
 
+    <section class="mybuttons">
     <input id="array" type="text" placeholder="Enter array seperated by space">
-    <button id="submit" class="btn-primary " onclick="submit()">Submit</button>
-    <span id="speed">Speed
+    <button id="submit" class="btn-primary " style="margin-left: 1em;" onclick="submit()">Submit</button>
+    <span id="speed" style="margin-left: 1em; color: white;">Speed
       <input id="speed_input" type="range" min="300" max="1500" stepDown=100 value=900>
     </span>
-    <button class="btn-default" onclick="setmax()" style="margin-left:40px">Stop Next Iteration</button>
-    <button class="btn-default" onclick="setzero()">Start Over</button>
+    <button class="btn-default" id = "stop" style="margin-left: 1em;" onclick="setmax()" style="margin-left:40px">Stop Next Iteration</button>
+    <button class="btn-default" id = "start" style="margin-left: 1em;" onclick="setzero()">Start Over</button>
+  </section>
     <!-- old one below -->
-    <section style="padding: 0; padding-bottom: 2%;"> <button class="btn1" onclick="generate()" id="btn1">Generate
-        Array</button>
-      <button class="btn4" onclick="reset()" id="btn4">Reset</button>
+    <section class = "feature">
+      <br><br> 
+      <button class="btn1" onclick="generate()" id="btn1">Random Array</button>
+      <br><br>
+      <button class="btn4" onclick="reset()" id="btn4">Reset Array</button>
     </section>
     <section class="sort">
       <br><br>
